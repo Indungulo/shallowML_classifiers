@@ -6,4 +6,4 @@ Training and testing data were sourced from Sentinel-2 MSI scenes acquired off B
 
 Freely available data and processes used for this tutorial:
 * Sentinel-2  MSI data -- https://dataspace.copernicus.eu
-* ACOLITE AC processor -- https://github.com/acolite/acolite/releases/tag/20250114.0
+* ACOLITE processor -- https://github.com/acolite/acolite/releases/tag/20250114.0
