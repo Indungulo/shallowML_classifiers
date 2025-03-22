@@ -1,4 +1,4 @@
-# shallowML_supervised
+# shallowML_classification
 
 Assessing the performance of a Gaussian Naive Bayes (NB) classifier and a Random Forest (RF) classifier for automated detection of Sargassum. In these notebooks, two models are trained and saved, then tested on new (unseen) data.
 
