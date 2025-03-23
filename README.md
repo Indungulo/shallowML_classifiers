@@ -1,9 +1,39 @@
-# shallowML_classification
+## shallowML_classification
+Assessing the performance of a Gaussian Naive Bayes (NB) classifier and a Random Forest (RF) classifier for automated detection of invasive Sargassum seaweed using Sentinel-2 MSI data.
 
-Assessing the performance of a Gaussian Naive Bayes (NB) classifier and a Random Forest (RF) classifier for automated detection of Sargassum. In these notebooks, two models are trained and saved, then tested on new (unseen) data.
+---
 
-Training and testing data were sourced from Sentinel-2 MSI scenes acquired off Barbados. Data were atmospherically corrected (AC) using ACOLITE. For training, pixels for the two classes 'Water' (n = 220) and 'Sargassum' (n = 331) were manually selected for training in SNAP - ESA Sentinel Application Platform (V10).
+## Classification Task
 
-Freely available data and processes used for this tutorial:
-* Sentinel-2  MSI data -- https://dataspace.copernicus.eu
-* ACOLITE processor -- https://github.com/acolite/acolite/releases/tag/20250114.0
+The first two notebooks train, save, and evaluate shallow classification models:
+- **ML1:** Gaussian Naive Bayes (NB)
+- **ML2:** Random Forest (RF)
+
+The final notebook (**ML3**) uses the trained models to make a side-by-side comparison (NB vs RF).
+
+The classifiers are trained to distinguish between **Water** (n = 220) and **Sargassum** (n = 331) on a per-pixel basis.
+
+Each model is trained on labelled data and tested on unseen Sentinel-2 scenes. These are subsetted to reduce runtime.
+
+---
+
+## Data & Preprocessing Steps
+
+1. **Study Area**: Waters offshore of Barbados.  
+2. **Data Source**: Sentinel-2 MSI (Level-1C).  
+3. **Atmospheric Correction**: ACOLITE.
+4. **Training Labels**: Pixels manually labelled in SNAP.
+
+---
+
+## Tools & Sources
+
+- [ESA Sentinel-2 MSI data – Copernicus Open Access Hub](https://dataspace.copernicus.eu)
+- [ACOLITE atmospheric correction tool (RBINS)](https://github.com/acolite/acolite/releases/tag/20250114.0)
+- [ESA Sentinel Application Platform (SNAP) v10](https://step.esa.int/main/download/snap-download/)
+
+---
+
+## Status
+
+🚧 This repository is under construction. Additional metrics, visual outputs (e.g. confusion matrix), and model interpretation may be added in future updates.
