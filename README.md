@@ -37,3 +37,8 @@ Each model is trained on labelled data and tested on unseen Sentinel-2 scenes. T
 ## Status
 
 🚧 This repository is under construction. Additional metrics, visual outputs (e.g. confusion matrix), and model interpretation may be added in future updates.
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
